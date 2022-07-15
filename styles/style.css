@@ -108,14 +108,17 @@ p {
 
 .latest-work__images {
     display: flex;
+    padding: 0;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
 }
 
 .latest-work__article {
+    width: 300px;
+    margin: 15px;
+    padding: 0;
     text-align: left;
-    padding: 70px;
-    padding-top: 0;
+    
 }
 
 .latest-work__title {
@@ -146,12 +149,12 @@ p {
 
 .clients__blocks__article p {
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .clients__blocks__article img {
     float: left;
-    margin-top: 170px;
+    margin-top: 200px;
     padding: 5px;
 
 }
@@ -159,7 +162,7 @@ p {
 .star {
     display: flex;
     flex-wrap: wrap;
-    width: 55%;
+    width: 60%;
     padding: 10px;
 }
 
