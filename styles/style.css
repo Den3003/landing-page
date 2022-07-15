@@ -74,9 +74,99 @@
 
 }
 
-/* Companies */
+    /* Companies */
 
 .companies {
     display: flex;
     justify-content: space-evenly;
+    padding: 40px;
+    margin: 60px 0 0 0;
+
+}
+
+    /* About */
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0 100px 0;
+
+}
+
+article {
+    text-align: center;
+    padding: 40px;
+    width: 20%;
+}
+
+p {
+    line-height: 1.6;
+}
+
+    /* Latest Work */
+
+
+.latest-work__images {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.latest-work__article {
+    text-align: left;
+    padding: 70px;
+    padding-top: 0;
+}
+
+.latest-work__title {
+    text-align: center;
+    margin: 0 0 60px 0;
+    font-size: 2rem;
+}
+
+
+    /* Clients */
+
+.client__title {
+    text-align: center;
+    margin: 80px 0 60px 0;
+    font-size: 2rem;
+}
+
+.clients__blocks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.clients__blocks__article {
+    background-color: #F3F3F3;
+    text-align: left;
+    height: 400px;
+}
+
+.clients__blocks__article p {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.clients__blocks__article img {
+    float: left;
+    margin-top: 170px;
+    padding: 5px;
+
+}
+
+.star {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    padding: 10px;
+}
+
+.star span {
+    margin-top: 10px;
+    padding: 5px;
+}
+.star img {
+    padding: 3px;
 }
