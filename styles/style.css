@@ -131,9 +131,8 @@ p {
 .latest-work__images {
     display: grid;
     grid-template-columns: auto auto auto;
-    justify-content: center;
-    padding: 10px;
-    gap: 50px;
+    justify-content: space-between;
+    gap: 30px;
     
 }
 
@@ -159,7 +158,7 @@ p {
 
 .clients_blocks {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .clients_blocks__article {
@@ -213,8 +212,7 @@ p {
 }
 
 .contact_left {
-    width: 28%;
-    padding: 65px;
+   
 }
 
 .contact_left h2 {
@@ -222,22 +220,23 @@ p {
 }
 
 .contact_left p {
+    width: 45%;
     margin-bottom: 60px;
 
 }
 
 .contact_left__social {
-    width: 70%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .contact_email {
     display: flex;
     flex-direction: column;
-    width: 40%;
-    padding: 65px;
+    width: 70%;
 }
 
 .contact_email__input {
@@ -263,15 +262,39 @@ p {
     margin: 10px;
     color: white;
     background-color: #2d2d2d;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1090px) {
     .latest-work__images {
         grid-template-columns: auto auto;
     }
+
+    .clients_blocks {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .clients_blocks__article {
+        margin-bottom: 50px;
+    }
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-device-width: 960px) {
+    
+    .wrapper {
+        padding: 0 20px;
+    }
+    .visual-designer__left {
+        width: 50%;
+    }
+
+    .visual-designer__right {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
     
     .wrapper {
         padding: 0 30px;
@@ -376,6 +399,7 @@ p {
     .latest-work__images {
         display: grid;
         grid-template-columns: auto;
+        justify-content: center;
     }
 
         /* Clients */
@@ -383,6 +407,7 @@ p {
     .clients_blocks {
         display: grid;
         grid-template-columns: auto;
+        justify-content: center;
         
     }
 
@@ -395,7 +420,7 @@ p {
     .contact {
         display: grid;
         grid-template-columns: auto;
-        width: 340px;
+        width: 330px;
         justify-content: center;
         align-items: center;
         padding: 0;
@@ -411,10 +436,19 @@ p {
         margin: 0 0 50px 0;
     }
 
+    .contact_left p {
+        width: 100%;
+    }
+
+    .contact_left__social a{
+        margin: 0;
+        margin-right: 20px;
+    }
+
     .contact_email {
         padding: 0;
         margin: 0;
-        width: 325px;
+        width: 327px;
     }
 
     .contact_email__input {
