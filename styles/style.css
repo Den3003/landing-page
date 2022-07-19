@@ -19,13 +19,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-
+    height: 120px;
 }
 
-.header__logo {
-    font-size: 30px;
-}
 
 .header__nav {
     display: flex;
@@ -63,11 +59,6 @@
 }
 
 
-
-
-
-
-
     /* Visual designer */
 
 .visual-designer {
@@ -76,6 +67,7 @@
     justify-content: space-evenly;
     height: 720px;
     align-items: center;
+    
 }
 
 .visual-designer__left {
@@ -102,7 +94,7 @@
 }
 
 .visual-designer__right {
-
+    
 }
 
     /* Companies */
@@ -119,14 +111,13 @@
 
 .about {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 100px 0 100px 0;
-
 }
 
-article {
+.about_blocks {
+    align-items: center;
     text-align: center;
-    padding: 40px;
     width: 20%;
 }
 
@@ -218,14 +209,12 @@ p {
 .contact {
     display: flex;
     justify-content: space-between;
-    /* background-color: bisque; */
     margin-top: 80px;
 }
 
 .contact_left {
     width: 28%;
     padding: 65px;
-    /* background-color: aqua; */
 }
 
 .contact_left h2 {
@@ -248,7 +237,6 @@ p {
     flex-direction: column;
     width: 40%;
     padding: 65px;
-    /* background-color: blue; */
 }
 
 .contact_email__input {
@@ -274,4 +262,172 @@ p {
     margin: 10px;
     color: white;
     background-color: #2d2d2d;
+}
+
+@media screen and (max-width: 1090px) {
+    .latest-work__images {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-device-width: 400px) {
+    
+    .wrapper {
+        padding: 0 30px;
+    }
+        /* Header */
+
+    .header__nav {
+        display: none;
+    }
+    
+    .header {
+        justify-content: center;
+        width: 100%;
+    }
+
+        /* Visual designer */
+
+    .visual-designer {
+    
+        display: grid;
+        grid-template-columns: auto;
+        height: 850px;
+    }
+
+    .visual-designer__left {
+        text-align: center;
+    }
+
+    .visual-designer__subtitle {
+        width: 380px;
+        padding: 0;
+        margin: 15px 0 15px 0;
+        font-size: 1rem;
+        
+    }
+
+    .visual-designer__title {
+        width: 380px;
+        font-size: 4rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .visual-designer__text {
+        width: 350px;
+        font-size: 1rem;
+        
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+
+    .visual-designer__right img {
+        
+        width: 375px;
+        margin-left: 2px;
+        
+        
+    }
+
+        /* Companies */
+
+    .companies {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .companies img {
+       padding: 20px;
+    }
+
+        /* About */
+
+    .about {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0;
+        margin: 0;
+        margin: 2px auto;
+        width: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_blocks {
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        width: 270px;
+        margin-bottom: 50px;
+    }
+
+    .about_blocks p {
+        margin-top: 40px;
+    }
+
+        /* Latest Work */
+
+    .latest-work__images {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+        /* Clients */
+
+    .clients_blocks {
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+
+    .clients_blocks__article {
+        margin-bottom: 80px;
+    }
+
+        /* Contact */
+
+    .contact {
+        display: grid;
+        grid-template-columns: auto;
+        width: 340px;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        margin: 2px auto;
+    }
+
+    .contact_left {
+        margin: 0;
+        padding: 0;
+        width: 325px;
+        text-align: left;
+        margin: 0 0 50px 0;
+    }
+
+    .contact_email {
+        padding: 0;
+        margin: 0;
+        width: 325px;
+    }
+
+    .contact_email__input {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .contact_email__textarea {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact_email__button {
+        margin: 0;
+    }
+    
 }

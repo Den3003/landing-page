@@ -18,10 +18,10 @@
         
         <!-- Header -->
     
-        <header class="header">
-        <span class="header__logo">
-            Logo
-        </span>
+    <header class="header">
+        <div class="header_left">
+            <img class="header_left__logo" src="./images/react.png" alt="react">
+        </div>
         <nav></nav>
         <ul class="header__nav">
             <li><a href="#about" class="header__link">About</a></li>
@@ -41,43 +41,47 @@
                     This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com
                 </p>
             </div>
-            <div class="visual-designer__right">
-                <img src="./images/girl.jpg" alt="">
-            </div>
+                <div class="visual-designer__right">
+                    <img src="./images/girl.jpg" alt="">
+                </div>
         </section>
         
             <!-- Companies -->
 
-        <section class="companies">
-            <img src="./images/google.svg" alt="google">
-            <img src="./images/nike.svg" alt="nike">
-            <img src="./images/samsung.svg" alt="samsung">
-            <img src="./images/apple.svg" alt="apple">
-            <img src="./images/intercom.svg" alt="intercom">
-            <img src="./images/adidas.svg" alt="adidas">
+        <section>
+            <div class="companies">
+                <img src="./images/google.svg" alt="google">
+                <img src="./images/nike.svg" alt="nike">
+                <img src="./images/samsung.svg" alt="samsung">
+                <img src="./images/apple.svg" alt="apple">
+                <img src="./images/intercom.svg" alt="intercom">
+                <img src="./images/adidas.svg" alt="adidas">
+            </div>
         </section>
             
             <!-- About -->
 
-        <section class="about">
-            <article>
+        <section id="about" class="about">
+            <div class="about_blocks">
                 <img src="./images/abs2.svg" alt="figure">
                 <h3>Product design</h3>
                 <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-            </article>
-            <article>
+            </div>
+            <div class="about_blocks">
                 <img src="./images/abs1.svg" alt="figure">
                 <h3>Art direction</h3>
                 <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-            </article>
-            <article>
+            </div>
+            <div class="about_blocks">
                 <img src="./images/abs.svg" alt="figure">
                 <h3>Visual design</h3>
                 <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
-            </article>
+            </div>
         </section>
+
             <!-- Latest Work -->
-        <section class="latest-work">
+
+        <section id="latest-work" class="latest-work">
             <h2 class="latest-work__title">Latest work</h2>
             <div class="latest-work__images">
                 <div class="latest-work__article">
@@ -111,8 +115,6 @@
                     <p>UI, Art drection</p>
                 </div>
             </div>
-
-                
         </section>
             
             <!-- Clients -->
@@ -162,7 +164,7 @@
 
             <!-- Contact -->
 
-    <footer class="contact">
+    <footer id="contact" class="contact">
         <div class="contact_left">
             <h2>Lets work together</h2>
             <p>This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com</p>
