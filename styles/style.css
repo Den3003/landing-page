@@ -287,7 +287,7 @@ p {
     }
 }
 
-@media only screen and (max-device-width: 960px) and (min-device-width: 765px) {
+@media only screen and (max-width: 960px) and (min-width: 765px) {
     
     
         /* Visual designer */
@@ -363,7 +363,7 @@ p {
 }
 
 
-@media only screen and (max-device-width: 765px) and (min-device-width: 700px) {
+@media only screen and (max-width: 765px) and (min-width: 700px) {
     
         /* Visual designer */
     
@@ -461,7 +461,7 @@ p {
 
 }
 
-@media only screen and (max-device-width: 700px) and (min-device-width: 480px) {
+@media only screen and (max-width: 700px) and (min-width: 480px) {
     
         /* Visual designer */
     
@@ -563,7 +563,7 @@ p {
 }
 
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 480px) {
     
     .wrapper {
         padding: 0 30px;
