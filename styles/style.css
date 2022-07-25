@@ -282,7 +282,21 @@ p {
 
 @media screen and (max-width: 1090px) {
     
-        /* Latest Work */
+        /* Companies */
+    
+    .companies {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 40px;
+        justify-content: space-around;
+        justify-items: center;
+    }
+
+    .companies img {
+        margin: 10px;
+    }
+
+    /* Latest Work */
     
     .latest-work__images {
         display: grid;
