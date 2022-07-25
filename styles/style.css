@@ -127,7 +127,8 @@
 .about_blocks {
     align-items: center;
     text-align: center;
-    width: 20%;
+    padding: 10px;
+    max-width: 20%;
 }
 
 p {
@@ -286,18 +287,16 @@ p {
     .latest-work__images {
         display: grid;
         grid-template-columns: auto auto;
-        gap: 0;
+        justify-content: space-evenly;
     }
 
         /* Clients */
 
     .clients_blocks {
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-
-    .clients_blocks__article {
-        margin-bottom: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
     }
 }
 
@@ -341,6 +340,13 @@ p {
         align-items: center;
     }
 
+        /* About */
+
+    .about_blocks {
+        padding: 10px;
+        max-width: 40%;
+    }
+
         /* Contact */
 
     .contact {
@@ -349,11 +355,20 @@ p {
     }
     
     .contact_left {
+        max-width: 70%;
+        margin: 2px auto;
         text-align: center;
     }
     
+    .contact_left h2 {
+        margin-bottom: 30px;
+    }
+
     .contact_left p {
-        width: 100%;
+        margin: 2px auto;
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 70%;
     }
     
     .contact_left__social {
@@ -408,8 +423,8 @@ p {
 
         /* Latest Work */
 
-    .latest-work__article img {
-        max-width: 80%;
+    .latest-work__images {
+        margin: 2px auto;
     }
 
         /* Clients */
@@ -433,13 +448,13 @@ p {
         /* About */
 
     .about {
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .about_blocks {
-        margin: 2px auto;
-        width: 80%;
+        max-width: 40%;
     }
 
         /* Contact */
@@ -516,14 +531,15 @@ p {
         /* About */
 
     .about {
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
 
     .about_blocks {
-        margin: 2px auto;
-        width: 80%;
+        padding: 20px;
+        max-width: 40%;
     }
     
     
@@ -627,7 +643,6 @@ p {
     .visual-designer__text {
         width: 350px;
         font-size: 1rem;
-        
         margin-left: 15px;
         margin-bottom: 20px;
     }
@@ -636,8 +651,6 @@ p {
         
         width: 375px;
         margin-left: 2px;
-        
-        
     }
 
         /* Companies */
@@ -658,22 +671,13 @@ p {
         /* About */
 
     .about {
-        display: grid;
-        grid-template-columns: auto;
-        padding: 0;
-        margin: 0;
-        margin: 2px auto;
-        width: 350px;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
     }
 
     .about_blocks {
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        width: 270px;
-        margin-bottom: 50px;
+        max-width: 60%;
     }
 
     .about_blocks p {
